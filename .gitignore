@@ -1,0 +1,8 @@
+node_modules/
+.DS_Store
+# 懒得 complie 但需要 build 内容可以找我拿
+build/
+# 懒得 flatten 可以找我拿
+flatten/*.sol
+coding_credential
+.secret
