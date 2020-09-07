@@ -24,6 +24,8 @@ pool: TNf43PYuWKtwzzeLw5FNMz7sAa2DrNahC6
 - 0x8b2aab294201b36446a755690ed416af2c8cf939
 
 ## usage
+⚠️ start time: 09/07/2020 @ 9:30am (UTC +00:00)
+⚠️ Distribution amount: 1000000 ivory
 1. call pool setRewardDistribution method
 2. ivory token transfer <X> amount to pool address
 3. call pool notifyRewardAmount <X> 
