@@ -595,7 +595,7 @@ pragma solidity ^0.5.0;
 
 contract LPTokenWrapper {
     using SafeMath for uint256;
-    using SafeERC20 for IERC20;
+    // using SafeERC20 for IERC20;
 
     IERC20 public usdt = IERC20(0xa614f803B6FD780986A42c78Ec9c7f77e6DeD13C);
 
@@ -613,13 +613,13 @@ contract LPTokenWrapper {
     function stake(uint256 amount) public {
         _totalSupply = _totalSupply.add(amount);
         _balances[msg.sender] = _balances[msg.sender].add(amount);
-        usdt.safeTransferFrom(msg.sender, address(this), amount);
+        usdt.transferFrom(msg.sender, address(this), amount);
     }
 
     function withdraw(uint256 amount) public {
         _totalSupply = _totalSupply.sub(amount);
         _balances[msg.sender] = _balances[msg.sender].sub(amount);
-        usdt.safeTransfer(msg.sender, amount);
+        usdt.transfer(msg.sender, amount);
     }
 }
 
@@ -703,7 +703,7 @@ contract IvoryUSDTPool is LPTokenWrapper, IRewardDistributionRecipient {
         uint256 reward = earned(msg.sender);
         if (reward > 0) {
             rewards[msg.sender] = 0;
-            ivory.safeTransfer(msg.sender, reward);
+            ivory.transfer(msg.sender, reward);
             emit RewardPaid(msg.sender, reward);
         }
     }
