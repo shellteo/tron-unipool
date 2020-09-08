@@ -20,8 +20,7 @@ usdt: TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t
 ivory: TMGrN8W9JCiWyXGQsiQs8Sf3r3aoAWp5tn
 - 0x7BFFa4EF967C68D14c8AA8cB888854F771C6db6B
 
-pool: TNf43PYuWKtwzzeLw5FNMz7sAa2DrNahC6
-- 0x8b2aab294201b36446a755690ed416af2c8cf939
+pool: TUr32hCzTdWCMjJXZvphLgafFEVfKagoAC
 
 ## usage
 ⚠️ start time: 09/07/2020 @ 9:30am (UTC +00:00)
