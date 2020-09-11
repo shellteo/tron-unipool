@@ -624,10 +624,10 @@ contract LPTokenWrapper {
 }
 
 contract IvoryUSDTPool is LPTokenWrapper, IRewardDistributionRecipient {
-    IERC20 public ivory = IERC20(0x7BFFa4EF967C68D14c8AA8cB888854F771C6db6B);
-    uint256 public constant DURATION = 625000; // ~7 1/4 days
+    IERC20 public ivory = IERC20(0x322De3a0b28385d165BfA7F268F6C99e6df942b4);
+    uint256 public constant DURATION = 604800; // ~7 days
 
-    uint256 public starttime = 1599471000; // 09/07/2020 @ 9:30am (UTC +00:00)
+    uint256 public starttime = 1599699600; // 09/10/2020 @ 01:00am (UTC +00:00)
     uint256 public periodFinish = 0;
     uint256 public rewardRate = 0;
     uint256 public lastUpdateTime;
